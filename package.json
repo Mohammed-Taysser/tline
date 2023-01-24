@@ -50,5 +50,21 @@
 		"presets": [
 			"@babel/preset-react"
 		]
-	}
+	},
+	"license": "MIT",
+	"keywords": [
+		"time",
+		"timeline",
+		"list",
+		"dark",
+		"filter"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/mohammed-taysser/tline.git"
+	},
+	"homepage": "https://github.com/Mohammed-Taysser/tline",
+	"files": [
+		"dist"
+	]
 }
