@@ -57,7 +57,7 @@ const events = [] // your events as previously structured
 | `reversed` | `boolean` | `false` | determine if timeline is reversed or not default is sorted by date |
 | `darkmode` | `boolean` | `false` | activate `darkmode` |
 
-### Playground
+## Playground
 
 ```jsx
 const [setting, setSetting] = useState({
