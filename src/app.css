@@ -1,0 +1,69 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: rgb(230, 230, 230);
+
+	color: rgb(50, 50, 50);
+	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+		'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.app .options-wrapper {
+	display: flex;
+	justify-content: space-between;
+	items-align: center;
+	padding: 0.7em;
+	background: white;
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+	margin: 0;
+	top: 0;
+}
+
+.app .date-filter {
+	padding: 0 20px;
+}
+.app h1 {
+	font-size: 1em;
+	margin: 0;
+}
+
+.app .header-link {
+	text-decoration: none;
+	padding-right: 1em;
+}
+
+.app.darkmode {
+	color: #f1f5f9;
+	background: #0f172a;
+}
+
+.app.darkmode .options-wrapper {
+	background: #1e293b;
+	color: rgb(230, 230, 230);
+}
+
+.app.darkmode .header-link {
+	color: #e2e8f0;
+}
+
+.app.darkmode .options-wrapper a {
+	color: #e2e8f0;
+}
+
+@media (max-width: 768px) {
+	.app .options-wrapper {
+		flex-direction: column;
+		gap: 15px;
+	}
+	.app .date-filter {
+		padding: 0;
+	}
+
+	.app h1,
+	.app .header-link {
+		display: none;
+	}
+}
