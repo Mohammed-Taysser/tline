@@ -11,6 +11,10 @@
 # production
 /build
 
+# utils
+package-lock.json
+.vscode
+
 # misc
 .DS_Store
 .env.local
