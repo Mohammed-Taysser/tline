@@ -1,4 +1,5 @@
 *
+!src/libs/*
 !dist/*
 !README.md
 !package.json
