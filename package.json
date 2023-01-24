@@ -56,7 +56,8 @@
 	},
 	"homepage": "https://github.com/Mohammed-Taysser/tline",
 	"files": [
-		"dist"
+		"dist",
+		"src"
 	],
 	"author": {
 		"email": "mohamedtaysser983@gmai.com",
