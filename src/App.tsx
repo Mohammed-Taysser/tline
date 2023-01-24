@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import Tline from './components/Tline';
-import { DefaultProps } from './components/tline';
+import Tline, { DefaultProps } from './libs/Tline';
 import CONFIG from './config';
 import data from './data';
 import './app.css';
