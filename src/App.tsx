@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import Tline, { DefaultProps } from './libs/Tline';
+import './app.css';
 import CONFIG from './config';
 import data from './data';
-import './app.css';
+import Tline from './libs/Tline';
+import { DefaultProps } from './libs/tline';
 
 function App() {
 	const [setting, setSetting] = useState<DefaultProps>({
