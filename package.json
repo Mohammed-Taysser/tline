@@ -20,11 +20,11 @@
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
-		"publish": "npm run publish:clean && npm run publish:esm && npm run publish:cjs && npm run publish:css",
-		"publish:clean": "rm -rf dist/",
-		"publish:esm": "tsc",
-		"publish:cjs": "tsc --module CommonJS --outDir dist/cjs",
-		"publish:css": "cp src/tline/index.css dist/cjs/tline;cp src/tline/index.css dist/esm/tline"
+		"deploy": "npm run deploy:clean && npm run deploy:esm && npm run deploy:cjs && npm run deploy:css",
+		"deploy:clean": "rm -rf dist/",
+		"deploy:esm": "tsc -p ./tsconfig.package.json",
+		"deploy:cjs": "tsc -p ./tsconfig.package.json --module CommonJS --outDir dist/cjs",
+		"deploy:css": "cp src/tline/index.css dist/cjs/tline;cp src/tline/index.css dist/esm/tline"
 	},
 	"eslintConfig": {
 		"extends": [
@@ -58,7 +58,7 @@
 		"type": "git",
 		"url": "git+https://github.com/mohammed-taysser/tline.git"
 	},
-	"homepage": "https://github.com/Mohammed-Taysser/tline",
+	"homepage": "https://tline.vercel.app/",
 	"files": [
 		"dist",
 		"src"
