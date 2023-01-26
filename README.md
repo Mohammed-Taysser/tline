@@ -13,8 +13,9 @@ Time line for the CSS evolution and history of tooling, libraries, frameworks an
 - JavaScript code linting is done using [`eslint`](https://www.npmjs.com/package/eslint)
 - Has [`.editorconfig`](https://editorconfig.org/) which helps developers define and maintain consistent coding styles between different editors and IDEs.
 
-| ![tline-light](assets/tline-light.png) | ![tline-dark](assets/tline-dark.png) |
-| -------------------------------------- | ------------------------------------ |
+![tline-light](assets/tline-light.png)
+
+![tline-dark](assets/tline-dark.png)
 
 ## Installation
 
