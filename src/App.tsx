@@ -1,12 +1,11 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import './app.css';
 import CONFIG from './config';
 import data from './data';
-import Tline from './libs/Tline';
-import { DefaultProps } from './libs/tline';
+import Tline, { TlineProps } from './tline';
 
 function App() {
-	const [setting, setSetting] = useState<DefaultProps>({
+	const [setting, setSetting] = useState<TlineProps>({
 		tag: 'all',
 		year: 0,
 		reversed: false,

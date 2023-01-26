@@ -1,8 +1,29 @@
 import React, { useEffect, useState } from 'react';
-import { DefaultProps, TLine } from './tline';
-import './tline.css';
+import './index.css';
 
-const MONTHS = [
+export interface TLine {
+	name: string;
+	url?: string;
+	description: string;
+	createdAt: Date;
+	tags: string[];
+	links?: [
+		{
+			name: string;
+			url: string;
+		}
+	];
+}
+
+export interface TlineProps {
+	tag?: string;
+	year?: number;
+	reversed?: boolean;
+	darkmode?: boolean;
+	timeline: TLine[];
+}
+
+const MONTHS: string[] = [
 	'January',
 	'February',
 	'March',
@@ -17,7 +38,7 @@ const MONTHS = [
 	'December',
 ];
 
-function Tline(props: DefaultProps) {
+function Tline(props: TlineProps): JSX.Element {
 	const [timeline, setTimeline] = useState<TLine[]>(props.timeline);
 
 	useEffect(() => {
@@ -114,7 +135,7 @@ function Tline(props: DefaultProps) {
 	);
 }
 
-Tline.defaultProps = {
+Tline.TlineProps = {
 	tag: 'all',
 	year: 0,
 	reversed: false,
