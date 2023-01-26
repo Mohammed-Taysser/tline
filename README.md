@@ -4,13 +4,17 @@ Time line for the CSS evolution and history of tooling, libraries, frameworks an
 
 ## Features
 
-- Zero dependencies
+- Zero dependencies 💯
 - dark mode support 🌓
-- reverse timeline is supported
-- sort timeline by default
-- support filter using tags and year
+- reverse timeline is supported 🔃
+- sort timeline by default ✂️
+- support filter using tags and year 📆
+- Build using [`typescript`](https://www.typescriptlang.org/)
 - JavaScript code linting is done using [`eslint`](https://www.npmjs.com/package/eslint)
 - Has [`.editorconfig`](https://editorconfig.org/) which helps developers define and maintain consistent coding styles between different editors and IDEs.
+
+| ![tline-light](assets/tline-light.png) | ![tline-dark](assets/tline-dark.png) |
+| -------------------------------------- | ------------------------------------ |
 
 ## Installation
 
@@ -50,12 +54,12 @@ const events = [] // your events as previously structured
 
 ## Available `props`
 
-| property | type | default | description  |
-| --- | --- | --- | --- |
-| `tag` | `string` | `all` | filter timeline by events tag |
-| `year` | `number` | `0` | filter timeline by events year |
+| property   | type      | default | description                                                        |
+| ---------- | --------- | ------- | ------------------------------------------------------------------ |
+| `tag`      | `string`  | `all`   | filter timeline by events tag                                      |
+| `year`     | `number`  | `0`     | filter timeline by events year                                     |
 | `reversed` | `boolean` | `false` | determine if timeline is reversed or not default is sorted by date |
-| `darkmode` | `boolean` | `false` | activate `darkmode` |
+| `darkmode` | `boolean` | `false` | activate `darkmode`                                                |
 
 ## Playground
 
