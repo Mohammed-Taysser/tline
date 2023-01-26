@@ -1,8 +1,6 @@
 {
 	"name": "tline",
 	"version": "0.1.9",
-	"private": false,
-	"types": "src/libs/tline.d.ts",
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.16.5",
 		"@testing-library/react": "^13.4.0",
@@ -21,7 +19,12 @@
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
-		"eject": "react-scripts eject"
+		"eject": "react-scripts eject",
+		"publish": "npm run publish:clean && npm run publish:esm && npm run publish:cjs && npm run publish:css",
+		"publish:clean": "rm -rf dist/",
+		"publish:esm": "tsc",
+		"publish:cjs": "tsc --module CommonJS --outDir dist/cjs",
+		"publish:css": "cp src/tline/index.css dist/cjs/tline;cp src/tline/index.css dist/esm/tline"
 	},
 	"eslintConfig": {
 		"extends": [
@@ -48,7 +51,8 @@
 		"list",
 		"dark",
 		"darkmode",
-		"filter"
+		"filter",
+		"react-package"
 	],
 	"repository": {
 		"type": "git",
@@ -64,5 +68,10 @@
 		"name": "Mohammed Taysser",
 		"url": "https://mohammed-taysser.github.io/portfolio/"
 	},
-	"main": "index.js"
+	"peerDependencies": {
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"main": "dist/cjs/tline/index.js",
+	"module": "dist/esm/tline/index.js"
 }
